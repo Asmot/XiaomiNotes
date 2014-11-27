@@ -41,6 +41,7 @@ public class NotesListActivity extends Activity implements OnClickListener{
     
     private void createNewNote() {
     	Intent intent = new Intent(this, NoteEditActivity.class);
+    	intent.setAction(Intent.ACTION_EDIT);
     	startActivityForResult(intent, REQUEST_CODE_NEW_NODE);
     }
 
